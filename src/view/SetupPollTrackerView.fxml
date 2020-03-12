@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SetupPollTrackerController">
+   <children>
+      <Label fx:id="label1" layoutX="88.0" layoutY="72.0" prefHeight="84.0" prefWidth="162.0" text="Number of polls to track:" />
+      <Label fx:id="label2" layoutX="88.0" layoutY="168.0" text="Number of seats available in election:" />
+      <Label fx:id="label3" layoutX="86.0" layoutY="223.0" text="Numbre of parties running in election:" />
+      <TextField fx:id="textFieldNumOfPolls" layoutX="333.0" layoutY="102.0" onKeyTyped="#reactToNumOfPollsKeyTyped" />
+      <TextField fx:id="textFieldNumOfSeats" layoutX="333.0" layoutY="164.0" />
+      <TextField fx:id="textFieldNumOfParties" layoutX="333.0" layoutY="219.0" />
+      <Button fx:id="buttonClear" layoutX="161.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#buttonClearClicked" prefHeight="25.0" prefWidth="80.0" text="Clear" />
+      <Button fx:id="buttonSubmit" layoutX="355.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#buttonSubmitClicked" prefHeight="25.0" prefWidth="90.0" text="Submit" />
+   </children>
+</Pane>
